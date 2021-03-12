@@ -12,7 +12,6 @@ def print_slowly(text):
     sys.stdout.flush()
     sleep(3.5)
     print (text)
-os.system ('clear')
 print ('')
 print ('')
 print (''' 
@@ -42,14 +41,14 @@ if choice == '1' or choice == '[1]' :
     for website in websites_list_opening :
         for login in logins_list_opening :
             try :
-                correctpanel = (website + '/' + login)
-                the_panel_opening = urllib.request.urlopen (correctpanel)
+                panel = (website + '/' + login)
+                the_panel_opening = urllib.request.urlopen (panel)
                 print (' \033[96m---------------------------------------------------')
-                print (correctpanel)
+                print (panel)
                 print (' \033[96m---------------Admin login Is Found----------------')
-            except :
+            except urllib.error.URLError as msg :
                 print (' \033[91m---------------------------------------------------')
-                print (correctpanel)
+                print (panel)
                 print (' \033[91m---------------Admin login Not Found---------------')
     print ('To contact Me : bigbosswashere@gmail.com ')
 elif choice == '2' or choice == '[2]' :
@@ -60,14 +59,14 @@ elif choice == '2' or choice == '[2]' :
     os.system('clear')
     for login in logins_list_opening:
         try:
-            correctpanel = (website + '/' + login)
-            the_panel_opening = urllib.request.urlopen(correctpanel)
+            panel = (website + '/' + login)
+            the_panel_opening = urllib.request.urlopen(panel)
             print(' \033[96m---------------------------------------------------')
-            print(correctpanel)
+            print(panel)
             print(' \033[96m---------------Admin login Is Found----------------')
-        except:
+        except urllib.error.URLError as msg :
             print(' \033[91m---------------------------------------------------')
-            print(correctpanel)
+            print(panel)
             print(' \033[91m---------------Admin login Not Found---------------')
     print('To contact Me : bigbosswashere@gmail.com ')
 else :
