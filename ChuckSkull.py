@@ -12,6 +12,7 @@ def print_slowly(text):
     sys.stdout.flush()
     sleep(3.5)
     print (text)
+os.system('clear')
 print ('')
 print ('')
 print (''' 
