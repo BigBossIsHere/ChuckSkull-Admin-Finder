@@ -33,7 +33,7 @@ print ('')
 print ('[1] Use A List Of Websites\n[2] Use A Link Of A Website\n')
 choice = input ('Choose : ')
 if choice == '1' or choice == '[1]' :
-    print_slowly ('Write URL With protocol \033[91mhttp://\033[92m or \033[91mhttps://\033[92m don\'t use \033[91m/\033[92m after writing url in your list')
+    print_slowly ('Write URL With protocol \033[91mhttp://\033[92m or \033[91mhttps://\033[92m don\'t use \033[91m/\033[92m after writing URLs in your list')
     websites_list = input ('Enter your website list : ')
     logins_list = input ('Enter your Login list : ')
     websites_list_opening = open (websites_list , 'r').read().splitlines()
@@ -53,7 +53,7 @@ if choice == '1' or choice == '[1]' :
                 print (' \033[91m---------------Admin login Not Found---------------')
     print ('To contact Me : bigbosswashere@gmail.com ')
 elif choice == '2' or choice == '[2]' :
-    print_slowly ('Write URL With protocol \033[91mhttp://\033[92m or \033[91mhttps://\033[92m don\'t use \033[91m/\033[92m after writing url in your list')
+    print_slowly ('Write URL With protocol \033[91mhttp://\033[92m or \033[91mhttps://\033[92m don\'t use \033[91m/\033[92m after writing URL')
     website = input("Enter Website URL : ")
     logins_list = input('Enter your Login list : ')
     logins_list_opening = open(logins_list, 'r').read().splitlines()
